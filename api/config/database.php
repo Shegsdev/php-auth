@@ -1,6 +1,6 @@
 <?php
 
-include($_SERVER['DOCUMENT_ROOT'].'\auth_system\api\autoload.php');
+include($_SERVER['DOCUMENT_ROOT'].'\php-auth\api\autoload.php');
 
 define('DB_HOST', env('DB_HOST'));
 define('DB_NAME', env('DB_NAME'));
