@@ -1,11 +1,11 @@
 # php-auth
 A simple authentication system
 
-### Testing the API
+## Testing the API
 A very quick way to testing the API is by using Postman. <br>
 But before that, you need to set up the project on your local machine.
 
-### Let's get started
+## Let's get started
 Clone this repo by entering the following in your command line:
 ```
 git clone https://github.com/Shegsdev/php-auth.git
@@ -13,14 +13,14 @@ git clone https://github.com/Shegsdev/php-auth.git
 Inside the 'php-auth/api/' folder, rename the `env.example.php` file to `env.php`.
 Input all required credentials and make sure all is working correctly.
 
-### Signup API
+## Signup API
 Open up Postman and test register endpoint:
-__
-Request: \POST
+---
+*Request*: \POST
 ```
 http://{hostname}:{port}/php-auth/api/register.php
 ```
-Body:
+*Body*:
 ```
 {
     "firstname": "Lake",
@@ -32,20 +32,20 @@ Body:
 
 If everything worked correctly, you should get a response like so:
 ---
-Response:
+*Response*:
 ```
 {
     "message": "User created successfully."
 }
 ```
 
-### Login API
+## Login API
 
-Request: \POST
+*Request*: \POST
 ```
 http://{hostname}:{port}/php-auth/api/login.php
 ```
-Body:
+*Body*:
 ```
 {
     "email": "email@email.com",
@@ -54,7 +54,7 @@ Body:
 ```
 If everything worked correctly, you should get a response like so:
 ---
-Response:
+*Response*:
 ```
 {
     "message": "Successful login.",
@@ -62,13 +62,13 @@ Response:
 }
 ```
 
-### Verifying token API
+## Verifying token API
 Token verification helps to confirm if a user session is still valid and if the token has not expired. <br>
-Request: \POST
+*Request*: \POST
 ```
 http://{hostname}:{port}/php-auth/api/verify_token.php
 ```
-Body:
+*Body*:
 ```
 {
     "jwt": "generated token after login"
@@ -76,7 +76,7 @@ Body:
 ```
 If everything worked correctly, you should get a response like so:
 ---
-Response:
+*Response*:
 ```
 {
     "message": "Access granted.",
