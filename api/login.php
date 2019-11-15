@@ -1,7 +1,7 @@
 <?php
 
 
-header("Access-Control-Allow-Origin: localhost:8085/auth_system/api/");
+header("Access-Control-Allow-Origin: localhost:8085/php-auth/api/");
 header("Content-Type: application/json; charset=UTF-8");
 header("Access-Control-Allow-Methods: POST");
 header("Access-Control-Max-Age: 3600");
